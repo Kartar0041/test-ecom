@@ -1,0 +1,55 @@
+<svg width="3133" height="1001" viewBox="0 0 3133 1001" fill="none"
+     xmlns="http://www.w3.org/2000/svg" class="blur-layer ng-star-inserted">
+    <g opacity="0.7">
+        <g filter="url(#filter_219)">
+            <path opacity="0.9"
+                  d="M2369.1 361.902C1557.84 646.93 936.21 483.014 748.16 361.902C692.862 339.717 559.672 237.554 321.411 203.101C23.5853 160.034 335.023 578.066 598.882 684.169C862.742 790.272 1793.73 847.048 2250.47 752.641C2832.15 632.413 3383.2 5.61847 2369.1 361.902Z"
+                  fill="url(#paint_linear_219)"
+            >
+
+            </path>
+        </g>
+    </g>
+    <defs>
+        <filter x="0" y="0" width="3133" height="1000.58" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB" id="filter_219">
+            <feFlood flood-opacity="0" result="BackgroundImageFix">
+
+            </feFlood>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape">
+
+            </feBlend>
+            <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_766_8196">
+
+            </feGaussianBlur>
+        </filter>
+        a
+        <svg width="1203" height="601" viewBox="0 0 1203 601" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.9"
+                  d="M2169.1 161.902C1357.84 446.93 736.21 283.014 548.16 161.902C492.862 139.717 359.672 37.5543 121.411 3.10063C-176.415 -39.9664 135.023 378.066 398.882 484.169C662.742 590.272 1593.73 647.048 2050.47 552.641C2632.15 432.413 3183.2 -194.382 2169.1 161.902Z"
+                  fill="url(#paint0_linear_6904_55543)"/>
+            <defs>
+                <linearGradient id="paint0_linear_6904_55543" x1="-0.000201049" y1="0.000402472" x2="2244.37"
+                                y2="1116.99" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FF7448"/>
+                    <stop offset="0.567708" stop-color="#FF4848"/>
+                    <stop offset="1" stop-color="#E1113D"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <linearGradient x1="200" y1="200" x2="2444.37" y2="1316.99"
+                        gradientUnits="userSpaceOnUse" id="paint_linear_219">
+            <stop offset="0" stop-color="currentColor" class="blur-layer__stop" color="#FF7448">
+
+            </stop>
+            <stop offset="0.567708" stop-color="currentColor" class="blur-layer__stop" color="#FF4848">
+
+
+            </stop>
+            <stop offset="1" stop-color="currentColor" class="blur-layer__stop" color="#E1113D">
+
+            </stop>
+        </linearGradient>
+    </defs>
+</svg>

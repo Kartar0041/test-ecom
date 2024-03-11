@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "fantaicon";
+    src: url("../fonts/fantaicon/fantaicon.eot?0cf1385ebf652dd9d7a7e50aebabf821#iefix") format("embedded-opentype"),
+url("../fonts/fantaicon/fantaicon.woff2?0cf1385ebf652dd9d7a7e50aebabf821") format("woff2"),
+url("../fonts/fantaicon/fantaicon.woff?0cf1385ebf652dd9d7a7e50aebabf821") format("woff");
+}
+
+i[class^="fantaicon-"]:before, i[class*=" fantaicon-"]:before {
+    font-family: fantaicon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fantaicon-clubhouse:before {
+    content: "\f101";
+}
+.fantaicon-discord:before {
+    content: "\f102";
+}
+.fantaicon-facebook:before {
+    content: "\f103";
+}
+.fantaicon-instagram:before {
+    content: "\f104";
+}
+.fantaicon-linkedin:before {
+    content: "\f105";
+}
+.fantaicon-lit_it:before {
+    content: "\f106";
+}
+.fantaicon-medium:before {
+    content: "\f107";
+}
+.fantaicon-quora:before {
+    content: "\f108";
+}
+.fantaicon-reddit:before {
+    content: "\f109";
+}
+.fantaicon-telegram:before {
+    content: "\f10a";
+}
+.fantaicon-tiktok:before {
+    content: "\f10b";
+}
+.fantaicon-twitch:before {
+    content: "\f10c";
+}
+.fantaicon-twitter:before {
+    content: "\f10d";
+}
+.fantaicon-viber:before {
+    content: "\f10e";
+}
+.fantaicon-website:before {
+    content: "\f10f";
+}
+.fantaicon-whatsapp:before {
+    content: "\f110";
+}
+.fantaicon-youtube:before {
+    content: "\f111";
+}
