@@ -2,9 +2,10 @@ import { getServerData } from '@/services/serverSideDatafetch'
 import React from 'react'
 
 interface VideoViewProps {
-    params: { videoId: string } 
-    searcParams: { [key: string] : string }
+    params: { videoId: string };
+    searchParams: { [key: string]: string };
 }
+
 
 const VideoView: React.FC<VideoViewProps> = async ({ params, searchParams }) => {
     const shareId = searchParams['shareId'] ?? ''
