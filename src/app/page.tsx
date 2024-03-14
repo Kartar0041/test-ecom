@@ -47,77 +47,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <header className="header" id="header">
-          <div className="container">
-            <div className="header__inner">
-              <a
-                href="/"
-                className="header-logo header-logo--home"
-                title="litit logo"
-              >
-                <picture>
-                  
-                  <Image src={LogoImg} alt="logo" width={115} height={56} />
-                </picture>
-              </a>
-              <button
-                id="mobile-menu-button"
-                className="hamburger hamburger--squeeze show-tablet"
-                type="button"
-              >
-                <span className="hamburger-box">
-                  <span className="hamburger-inner"></span>
-                </span>
-              </button>
-
-              <nav className="header-nav hide-tablet">
-                <ul className="header-nav__ul">
-                  <li className="header-nav__li show-desktop">
-                    <span className="dropdown">
-                      <a href="#" className="dropdown__btn header-nav__more">
-                        <span></span>
-                      </a>
-                      <span className="dropdown__tooltip header-nav__tooltip">
-                        <span className="dropdown__tooltip-inner">
-                          <ul className="header-nav__dropdown-list">
-                            <li className="header-nav__dropdown-item">
-                              <a
-                                href="./token"
-                                title="Token"
-                                className="header-nav__link"
-                              >
-                                Token
-                              </a>
-                            </li>
-                            <li className="header-nav__dropdown-item">
-                              <a
-                                href="./creators"
-                                title="Creators"
-                                className="header-nav__link"
-                              >
-                                Creators
-                              </a>
-                            </li>
-                          </ul>
-                        </span>
-                      </span>
-                    </span>
-                  </li>
-                </ul>
-              </nav>
-
-              <div id="user-menu" className="header-user-wrapper">
-                <div className="log-btn-block">
-                  <div className="log-btn-block__inner">
-                    <a href="./signin" className="btn btn-white">
-                      <span className="btn__inner">Log in</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header> */}
+        
         <Header />
 
         <main className="main">
@@ -1055,48 +985,7 @@ export default function Home() {
     </div>
   </section>
 
-  {/* <footer className="footer">
-    <div className="container footer__container">
-      <div className="footer__inner">
-        <div>
-          <a href="./" className="footer-logo" title="litit logo">
-            <picture>
-              <Image src={FooterLogo} alt="" height={44} width={109} />
-            </picture>
-          </a>
-          <ul className="footer__socials">
-           
-            <li>
-              <a href="https://www.linkedin.com/company/lititapp" target="_blank" title="litit linkedin">
-                <picture>
-                  <Image src={Linkedin} alt="" height={20} width={20} />
-                </picture>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        
-        <div className="footer-links">
-          <ul className="footer-links__list">
-           
-            <li className="footer-links__item">
-              <a href="./pages/privacy-notice" target="_blank" title="Privacy Notice">Privacy Notice</a>
-            </li>
-          </ul>
-        </div>
-        <div className="footer__store-btn">
-          <a href="https://apps.apple.com/us/app/lit-it-short-video-app/id1610743469" data-download-link="true" target="_blank">
-            <Image src={AppStore} alt="" className="store-img" />
-          </a>
-          <a href="https://play.google.com/store/apps/details?id=com.litit.app" data-download-link="true" target="_blank">
-            <Image src={PlayMarket} alt="" className="store-img" />
-
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer> */}
+ 
   <Footer />
 
         </main>
