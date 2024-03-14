@@ -505,7 +505,7 @@ export default function Home() {
                 <div className="features-card__content">
                   <div className="features-card__pic">
                     <div className="features-card__video">
-                      <video autoplay muted loop playsinline preload="auto" data-support-video>
+                      <video muted loop preload="auto" data-support-video>
                         <source data-src="/assets/media/Videos app_room.mp4" type="video/mp4" />
                         <source data-src="/assets/media/Videos_app_room.webm" type="video/webm" />
                         Your browser doesn&apos;t support HTML5 video tag.
@@ -527,7 +527,7 @@ export default function Home() {
                 <div className="features-card__content">
                   <div className="features-card__pic">
                     <div className="features-card__video">
-                      <video autoplay muted loop playsinline preload="auto" data-support-video>
+                      <video muted loop preload="auto" data-support-video>
                         <source data-src="/assets/media/Character_1.mp4" type="video/mp4" />
                         <source data-src="/assets/media/Character_1.webm" type="video/webm" />
                         Your browser doesn&apos;t support HTML5 video tag.
@@ -610,7 +610,7 @@ export default function Home() {
                   <div className="features-card__content">
                     <div className="features-card__pic">
                       <div className="features-card__video">
-                        <video autoplay muted loop playsinline preload="auto" data-support-video>
+                        <video muted loop preload="auto" data-support-video>
                           <source src="/assets/media/Videos app_room.mp4" type="video/mp4" />
                           <source src="/assets/media/Videos_app_room.webm" type="video/webm" />
                           Your browser doesn&apos;t support HTML5 video tag.
@@ -631,7 +631,7 @@ export default function Home() {
                   <div className="features-card__content">
                     <div className="features-card__pic">
                       <div className="features-card__video">
-                        <video autoplay muted loop playsinline preload="auto" data-support-video>
+                        <video muted loop preload="auto" data-support-video>
                           <source data-src="/assets/media/Character_1.mp4" type="video/mp4" />
                           <source data-src="/assets/media/Character_1.webm" type="video/webm" />
                           Your browser doesn&apos;t support HTML5 video tag.
@@ -652,7 +652,7 @@ export default function Home() {
                   <div className="features-card__content">
                     <div className="features-card__pic">
                       <div className="features-card__video">
-                        <video autoplay muted loop playsinline preload="auto" data-support-video>
+                        <video muted loop preload="auto" data-support-video>
                           <source data-src="/assets/media/nftmarketplace.mp4" type="video/mp4" />
                           <source data-src="/assets/media/nftmarketplace.webm" type="video/webm" />
                           Your browser doesn&apos;t support HTML5 video tag.
@@ -771,7 +771,7 @@ export default function Home() {
                 <div className="section-tile-horizontal__short-videos">
                   <div className="section-tile-horizontal__short-videos-inner">
                     <picture>
-                      <source media="(max-width: 575.98px)" srcset="assets/img/images/mobile-app/short-videos-m.png" />
+                      {/* <source media="(max-width: 575.98px)" srcset="assets/img/images/mobile-app/short-videos-m.png" /> */}
                       {/* <img loading="lazy" src="assets/img/images/mobile-app/short-videos.png" alt="" /> */}
                       <Image src={ShortVideo} alt="" />
                     </picture>
