@@ -836,7 +836,7 @@ export default function Home() {
                 <div className="section-tile-horizontal__subcategory">
                   <div className="section-tile-horizontal__subcategory-inner">
                     <picture>
-                      <source media="(max-width: 575.98px)" srcset="assets/img/images/mobile-app/sub-ctg.png" />
+                      {/* <source media="(max-width: 575.98px)" srcset="assets/img/images/mobile-app/sub-ctg.png" /> */}
                       {/* <img loading="lazy" src="assets/img/images/mobile-app/sub-ctg-desc.png" alt="" /> */}
                       <Image src={SubCtg} alt="" />
                     </picture>
