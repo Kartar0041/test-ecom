@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import QRCodeStyling from 'qr-code-styling';
 import Image from 'next/image';
 
-export default function Signin = () => {
+export default function Signin () {
     const canvasRef = useRef(null);
 
   useEffect(() => {
