@@ -1,17 +1,12 @@
 "use client"
 import Footer from '@/components/footer';
 import Header from '@/components/header';
-import { getServerData } from '@/services/serverSideDatafetch'
-import React from 'react'
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import QRCodeStyling from 'qr-code-styling';
-//import { authGoApiInstance, Redirect, LocalStorageHelper, localStorageConst } from 'your-auth-library'; // Replace with your auth library
 import Image from 'next/image';
-// import {timer} from 'node:timers/promises';
-
 
 const Signin = () => {
-    const canvasRef = useRef<HTMLDivElement>(null);
+    const canvasRef = useRef(null);
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -46,7 +41,6 @@ const Signin = () => {
 
     qrCode.append(canvasRef.current);
 
-
     return () => {
     };
   }, []);
@@ -70,7 +64,6 @@ const Signin = () => {
                                         <div className="qr-code" data-qrcode>
                                             <div className="qr-code__top">
                                                 <div className="qr-code__pic" ref={canvasRef} data-qrcode-canvas></div>
-                                                {/* <canvas  /> */}
                                                 <div className="qr-code__expired hide" data-qrcode-expired>
                                                     <span className="qr-code__text">QR code expired</span>
                                                     <button type="button" className="btn btn-white" data-qrcode-update>
