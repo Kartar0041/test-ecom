@@ -5,7 +5,7 @@ import { getServerData } from '@/services/serverSideDatafetch'
 import React from 'react'
 import { useEffect, useRef, useState } from 'react';
 import QRCodeStyling from 'qr-code-styling';
-import { authGoApiInstance, Redirect, LocalStorageHelper, localStorageConst } from 'your-auth-library'; // Replace with your auth library
+//import { authGoApiInstance, Redirect, LocalStorageHelper, localStorageConst } from 'your-auth-library'; // Replace with your auth library
 import Image from 'next/image';
 // import {timer} from 'node:timers/promises';
 
