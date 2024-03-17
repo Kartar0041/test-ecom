@@ -13,7 +13,7 @@ interface SignInProps {
     // env: string;
 }
 
-const SignIn : React.FC<SignInProps> = () => {
+const SignInCom : React.FC<SignInProps> = () => {
     const router = useRouter();
     const [sessionCode, setSessionCode] = useState<string>('');
     const canvasRef = useRef(null);
@@ -150,4 +150,4 @@ const SignIn : React.FC<SignInProps> = () => {
     )
 }
 
-export default SignIn;
+export default SignInCom;
