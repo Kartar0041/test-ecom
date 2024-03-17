@@ -54,16 +54,12 @@ const SignInCom : React.FC<SignInProps> = () => {
     };
   }, [sessionCode]);
 
-  useEffect(() =>{
-    handleGetSession()
 
-  }, [])
 
 
     let intervalIDNew:any = null;
     const handleGetSession = async () => {
         try {
-            debugger
             if(sessionCode == ''){
                 const result = await axios.post('https://auth-go.lit.it/qr/session/new');
                 if (result.data.success) {
@@ -90,6 +86,10 @@ const SignInCom : React.FC<SignInProps> = () => {
         }
     }
     }
+    useEffect(() =>{
+        handleGetSession()
+    
+      }, [handleGetSession])
     return(
         <>
              <div className="wrapper">
