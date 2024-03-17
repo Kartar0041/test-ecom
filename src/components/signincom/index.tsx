@@ -78,6 +78,8 @@ const SignInCom : React.FC<SignInProps> = () => {
         };
     
         const handleJwtSession = async (sessionCode: string) => {
+            if (typeof window !== 'undefined') {
+
             if(intervalIDNew != null){
                 const resJwt = await axios.get(`https://auth-go.lit.it/qr/session/jwt?code=${sessionCode}`);
             if (resJwt.data.success === true) {
@@ -87,6 +89,7 @@ const SignInCom : React.FC<SignInProps> = () => {
                 router.push('/profile');
             }
         }
+    }
         }
         handleGetSession()
     
