@@ -1,5 +1,5 @@
 import React from 'react';
-import SignInCom from '@/components/signin';
+import SignInCom from '@/components/signincom';
 
 export default function Signin () {
 
