@@ -29,6 +29,7 @@ import FooterLogo from "../../public/img/icons/logo.svg";
 import SubCat2 from "../../public/img/images/mobile-app/sub-ctg.png"
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,9 +40,9 @@ export default function Home() {
             <div id="user-menu2" className="menu-user-wrapper">
               <div className="log-btn-block header-mobile-nav__item">
                 <div className="log-btn-block__inner">
-                  <a href="./signin" className="btn btn-white">
+                  <Link href={'/signin'} className="btn btn-white">
                     <span className="btn__inner">Log in</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

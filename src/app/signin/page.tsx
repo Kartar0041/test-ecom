@@ -1,59 +1,49 @@
-"use client"
-import Footer from '@/components/footer';
-import Header from '@/components/header';
-import { getServerData } from '@/services/serverSideDatafetch'
-import React from 'react'
-import { useEffect, useRef, useState } from 'react';
-import QRCodeStyling from 'qr-code-styling';
-import { authGoApiInstance, Redirect, LocalStorageHelper, localStorageConst } from 'your-auth-library'; // Replace with your auth library
-import Image from 'next/image';
-// import {timer} from 'node:timers/promises';
+import React from 'react';
+import SignIn from '@/components/signin';
 
+export default function Signin () {
+//     const canvasRef = useRef(null);
 
-const Signin = () => {
-    const canvasRef = useRef<HTMLDivElement>(null);
+//   useEffect(() => {
+//     if (!canvasRef.current) return;
 
-  useEffect(() => {
-    if (!canvasRef.current) return;
+//     const qrCode = new QRCodeStyling({
+//       width: 300,
+//       height: 300,
+//       margin: 10,
+//       data: 'https://google.com',
+//       image: `https://lit.it/assets/img/icons/logo-pic.png`,
+//       dotsOptions: {
+//         type: 'square',
+//         gradient: {
+//           type: 'linear',
+//           rotation: 0,
+//           colorStops: [
+//             { offset: 0, color: '#ED2CCE' },
+//             { offset: 0.5, color: '#B84AEA' },
+//             { offset: 1, color: '#8E61FF' },
+//           ],
+//         },
+//       },
+//       backgroundOptions: {
+//         color: '#141414',
+//       },
+//       imageOptions: {
+//         crossOrigin: 'anonymous',
+//         imageSize: 0.5,
+//         margin: 10,
+//       },
+//     });
 
-    const qrCode = new QRCodeStyling({
-      width: 300,
-      height: 300,
-      margin: 10,
-      data: 'https://google.com',
-      image: `https://lit.it/assets/img/icons/logo-pic.png`,
-      dotsOptions: {
-        type: 'square',
-        gradient: {
-          type: 'linear',
-          rotation: 0,
-          colorStops: [
-            { offset: 0, color: '#ED2CCE' },
-            { offset: 0.5, color: '#B84AEA' },
-            { offset: 1, color: '#8E61FF' },
-          ],
-        },
-      },
-      backgroundOptions: {
-        color: '#141414',
-      },
-      imageOptions: {
-        crossOrigin: 'anonymous',
-        imageSize: 0.5,
-        margin: 10,
-      },
-    });
+//     qrCode.append(canvasRef.current);
 
-    qrCode.append(canvasRef.current);
-
-
-    return () => {
-    };
-  }, []);
+//     return () => {
+//     };
+//   }, []);
 
     return (
         <>
-            <div className="wrapper">
+            {/* <div className="wrapper">
                 <Header />
  
                 <main className='main wrapper-login__main header-offset'>
@@ -70,7 +60,6 @@ const Signin = () => {
                                         <div className="qr-code" data-qrcode>
                                             <div className="qr-code__top">
                                                 <div className="qr-code__pic" ref={canvasRef} data-qrcode-canvas></div>
-                                                {/* <canvas  /> */}
                                                 <div className="qr-code__expired hide" data-qrcode-expired>
                                                     <span className="qr-code__text">QR code expired</span>
                                                     <button type="button" className="btn btn-white" data-qrcode-update>
@@ -106,10 +95,12 @@ const Signin = () => {
                     </div>
                 </main>
                 <Footer />
-            </div>
+            </div> */}
+            <SignIn 
+                // env={process.env.BASE_URL}
+            />
 
         </>
     )
 }
 
-export default Signin;
