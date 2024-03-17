@@ -57,39 +57,40 @@ const SignInCom : React.FC<SignInProps> = () => {
 
 
 
-    let intervalIDNew:any = null;
-    const handleGetSession = async () => {
-        try {
-            if(sessionCode == ''){
-                const result = await axios.post('https://auth-go.lit.it/qr/session/new');
-                if (result.data.success) {
-                    setSessionCode(result.data.data.session_code);
-                    const id = setInterval(() => {
-                        handleJwtSession(result.data.data.session_code);
-                    }, 2000);
-                    intervalIDNew = id;
-                }
-            }
-        } catch (error) {
-            console.log('error', error);
-        }
-    };
-
-    const handleJwtSession = async (sessionCode: string) => {
-        if(intervalIDNew != null){
-            const resJwt = await axios.get(`https://auth-go.lit.it/qr/session/jwt?code=${sessionCode}`);
-        if (resJwt.data.success === true) {
-            
-            window.localStorage.setItem('jwt', JSON.stringify(resJwt.data.data.access_token));
-            intervalIDNew = null;
-            router.push('/profile');
-        }
-    }
-    }
+   
     useEffect(() =>{
+        let intervalIDNew:any = null;
+        const handleGetSession = async () => {
+            try {
+                if(sessionCode == ''){
+                    const result = await axios.post('https://auth-go.lit.it/qr/session/new');
+                    if (result.data.success) {
+                        setSessionCode(result.data.data.session_code);
+                        const id = setInterval(() => {
+                            handleJwtSession(result.data.data.session_code);
+                        }, 2000);
+                        intervalIDNew = id;
+                    }
+                }
+            } catch (error) {
+                console.log('error', error);
+            }
+        };
+    
+        const handleJwtSession = async (sessionCode: string) => {
+            if(intervalIDNew != null){
+                const resJwt = await axios.get(`https://auth-go.lit.it/qr/session/jwt?code=${sessionCode}`);
+            if (resJwt.data.success === true) {
+                
+                window.localStorage.setItem('jwt', JSON.stringify(resJwt.data.data.access_token));
+                intervalIDNew = null;
+                router.push('/profile');
+            }
+        }
+        }
         handleGetSession()
     
-      }, [handleGetSession])
+      }, [])
     return(
         <>
              <div className="wrapper">
