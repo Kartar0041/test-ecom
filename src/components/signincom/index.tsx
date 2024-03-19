@@ -3,11 +3,12 @@ import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 import Header from '../header';
 import { useRouter } from 'next/navigation';
-import QRCodeStyling from 'qr-code-styling';
+// import QRCodeStyling from 'qr-code-styling';
 import Footer from '../footer';
 import { getClientData } from '@/services/interceptors';
 import axios from 'axios';
 import QrImage from '../../../public/img/icons/logo-pic.png';
+import QRCode from "react-qr-code";
 
 interface SignInProps {
     // env: string;
@@ -17,45 +18,6 @@ const SignInCom : React.FC<SignInProps> = () => {
     const router = useRouter();
     const [sessionCode, setSessionCode] = useState<string>('');
     const canvasRef = useRef(null);
-  useEffect(() => {
-    if (!canvasRef.current) return;
-
-    if(sessionCode) {
-        const qrCode = new QRCodeStyling({
-          width: 300,
-          height: 300,
-          margin: 10,
-          data: sessionCode,
-          image: `https://lit.it/assets/img/icons/logo-pic.png`,
-          imageOptions: {
-            crossOrigin: 'anonymous',
-            imageSize: 0.5,
-            margin: 10,
-          },
-          dotsOptions: {
-            type: 'square',
-            gradient: {
-                type: 'linear',
-                rotation: 0,
-                colorStops: [
-                { offset: 0, color: '#ED2CCE' },
-                { offset: 0.5, color: '#B84AEA' },
-                { offset: 1, color: '#8E61FF' },
-                ],
-            },
-            },
-            backgroundOptions: {
-            color: '#141414',
-            },
-        });
-        qrCode.append(canvasRef.current);
-    }
-    return () => {
-    };
-  }, [sessionCode]);
-
-
-
 
    
     useEffect(() =>{
@@ -112,7 +74,16 @@ const SignInCom : React.FC<SignInProps> = () => {
 
                                         <div className="qr-code" data-qrcode>
                                             <div className="qr-code__top">
-                                                <div className="qr-code__pic" ref={canvasRef} data-qrcode-canvas></div>
+                                                <div className="qr-code__pic" ref={canvasRef} data-qrcode-canvas>
+                                                {sessionCode && 
+                                        <QRCode
+                                            size={256}
+                                            style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+                                            value={sessionCode}
+                                            viewBox={`0 0 256 256`}
+                                        />
+                                        }
+                                                </div>
                                                 <div className="qr-code__expired hide" data-qrcode-expired>
                                                     <span className="qr-code__text">QR code expired</span>
                                                     <button type="button" className="btn btn-white" data-qrcode-update>
