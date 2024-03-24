@@ -25,7 +25,7 @@ const SignInCom: React.FC<SignInProps> = () => {
         const handleGetSession = async () => {
             try {
                 if (sessionCode == '') {
-                    const result = await axios.post('https://auth-go.lit.it/qr/session/new');
+                    const result = await axios.post('https://auth-go.api.litit1.com/qr/session/new');
                     if (result.data.success) {
                         setSessionCode(result.data.data.session_code);
                         const id = setInterval(() => {
@@ -44,7 +44,7 @@ const SignInCom: React.FC<SignInProps> = () => {
             if (typeof window !== 'undefined') {
                 if (jwtAccess == '' || jwtAccess == null) {
                     if (intervalIDNew != null) {
-                        const resJwt = await axios.get(`https://auth-go.lit.it/qr/session/jwt?code=${sessionCode}`);
+                        const resJwt = await axios.get(`https://auth-go.api.litit1.com/qr/session/jwt?code=${sessionCode}`);
                         if (resJwt.data.success === true) {
 
                             window.localStorage.setItem('jwt', JSON.stringify(resJwt.data.data.access_token));
