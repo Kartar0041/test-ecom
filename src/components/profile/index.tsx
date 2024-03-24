@@ -16,7 +16,7 @@ const ProfileIndex = () => {
                 throw new Error('JWT token not found in local storage');
             }
 
-            const res = await axios.get('https://user-go.api.litit1.com/mobile/v1/profile/me', {
+            const res = await axios.get('https://user-go.lit.it/mobile/v1/profile/me', {
                 headers: {
                     Authorization: `Bearer ${jwt}`
                 }
