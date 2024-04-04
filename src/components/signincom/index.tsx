@@ -80,9 +80,12 @@ const SignInCom: React.FC<SignInProps> = () => {
                                                     {sessionCode &&
                                                         <QRCode
                                                             size={256}
-                                                            style={{ height: "auto", maxWidth: "100%", width: "100%", bgColor: "#FFFFFF", fgColor: "#ff0" }}
+                                                            style={{ height: "auto", maxWidth: "100%", width: "100%" }}
                                                             value={sessionCode}
                                                             viewBox={`0 0 256 256`}
+                                                            fgColor="#FFFFFF"
+                                                            bgColor="#000000"
+                                                            level="Q"
                                                         />
                                                     }
                                                 </div>
