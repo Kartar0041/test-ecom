@@ -24,6 +24,8 @@ import Rooms from "../../public/img/images/mobile-app/rooms.png"
 import SubCtg from "../../public/img/images/mobile-app/sub-ctg-desc.png";
 import Hashtags from "../../public/img/images/mobile-app/hashtags.png"
 import ShortVideo from "../../public/img/images/mobile-app/short-videos.png"
+import LergVideo from "https://lit.it/assets/media/home/new/room_2_on_black_2.webm";
+import LergVideoMp4 from "https://lit.it/assets/media/home/new/room_2_on_black_2.mp4";
 import Linkedin from "../../public/img/icons/footer/linkedin.svg";
 import FooterLogo from "../../public/img/icons/logo.svg";
 import SubCat2 from "../../public/img/images/mobile-app/sub-ctg.png"
@@ -94,21 +96,12 @@ export default function Home() {
           <div className="hero__video common-hero__video">
             <div className="hero__video-inner common-hero__video-inner">
               <div className="hero__video-container common-hero__video-container">
-                {/* <video autoplay muted loop playsinline preload="auto" poster="/assets/media/home/new/room_2_on_black_2.jpg" data-support-video>
-                  <source data-src="/assets/media/home/new/room_2_on_black_2.webm" type="video/webm" />
-                  <source data-src="/assets/media/home/new/room_2_on_black_2.mp4" type='video/mp4' />
-                  Your browser doesn&apos;t support HTML5 video tag.
-                </video> */}
-                <video width="320" height="240" controls preload="none">
-                  <source src="../../public/media/home/new/room_2_on_black_2.webm" type="video/webm" />
-                  {/* <track
-                    src="/path/to/captions.vtt"
-                    kind="subtitles"
-                    srcLang="en"
-                    label="English"
-                  /> */}
+                <video muted loop playsInline autoPlay preload="auto" poster="/assets/media/home/new/room_2_on_black_2.jpg" data-support-video>
+                  <source src={`https://lit.it/assets/media/home/new/room_2_on_black_2.webm`} type="video/webm" />
+                  <source src={`https://lit.it/assets/media/home/new/room_2_on_black_2.mp4`} type='video/mp4' />
                   Your browser doesn&apos;t support HTML5 video tag.
                 </video>
+           
               </div>
             </div>
           </div>
@@ -506,9 +499,10 @@ export default function Home() {
                 <div className="features-card__content">
                   <div className="features-card__pic">
                     <div className="features-card__video">
-                      <video muted loop preload="auto" data-support-video>
-                        <source data-src="/assets/media/Videos app_room.mp4" type="video/mp4" />
-                        <source data-src="/assets/media/Videos_app_room.webm" type="video/webm" />
+
+                      <video muted loop playsInline autoPlay preload="auto" poster="/assets/media/home/new/room_2_on_black_2.jpg" data-support-video>
+                        <source src={`https://lit.it/assets/media/Videos%20app_room.webm`} type="video/webm" />
+                        <source src={`https://lit.it/assets/media/Videos%20app_room.mp4`} type='video/mp4' />
                         Your browser doesn&apos;t support HTML5 video tag.
                       </video>
                     </div>
@@ -528,9 +522,9 @@ export default function Home() {
                 <div className="features-card__content">
                   <div className="features-card__pic">
                     <div className="features-card__video">
-                      <video muted loop preload="auto" data-support-video>
-                        <source data-src="/assets/media/Character_1.mp4" type="video/mp4" />
-                        <source data-src="/assets/media/Character_1.webm" type="video/webm" />
+                       <video muted loop playsInline autoPlay preload="auto" poster="/assets/media/home/new/room_2_on_black_2.jpg" data-support-video>
+                        <source src={`https://lit.it/assets/media/Character_1.webm`} type="video/webm" />
+                        <source src={`https://lit.it/assets/media/Character_1.mp4`} type='video/mp4' />
                         Your browser doesn&apos;t support HTML5 video tag.
                       </video>
                     </div>
@@ -839,7 +833,7 @@ export default function Home() {
                     <picture>
                       {/* <source media="(max-width: 575.98px)" srcset="assets/img/images/mobile-app/sub-ctg.png" /> */}
                       {/* <img loading="lazy" src="assets/img/images/mobile-app/sub-ctg-desc.png" alt="" /> */}
-                      <Image src={SubCtg} alt="" />
+                      <Image src={SubCtg} alt="" width={575} />
                     </picture>
                   </div>
                 </div>

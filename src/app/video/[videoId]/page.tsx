@@ -10,18 +10,16 @@ interface VideoViewProps {
 
 
 const VideoView: React.FC<VideoViewProps> = async ({ params, searchParams }) => {
-    const shareId = searchParams['shareId'] ?? ''
+    const sharerId = searchParams['sharerId'] ?? ''
     const referredByType = searchParams['referredByType'] ?? ''
     const shareCode = searchParams['shareCode'] ?? ''
     const referralCode = searchParams['referralCode'] ?? ''
 
-    const result = await getServerData('https://jsonplaceholder.typicode.com/todos/1');
-    console.log('bbbb', result)
+ 
 
 
     return(
         <>
-            <h1>Video pllllll {params?.videoId} {shareId} {referredByType} {shareCode} {referralCode}</h1>
             <div className="wrapper">
                 <Header />
  
@@ -32,6 +30,11 @@ const VideoView: React.FC<VideoViewProps> = async ({ params, searchParams }) => 
 
                             <div className='qr-entry__inner'>
                                 <div className="qr-entry__row">
+            {/* <h1>Video pllllll  {shareId} {referredByType} {shareCode} {referralCode}</h1> */}
+            <h2><strong>sharerId</strong> {sharerId}</h2>
+            <h2><strong>referredByType</strong> {referredByType}</h2>
+            <h2><strong>shareCode</strong> {shareCode}</h2>
+            <h2><strong>referralCode</strong> {referralCode}</h2>
 <h2>Test</h2>
                                 </div>
                             </div>
