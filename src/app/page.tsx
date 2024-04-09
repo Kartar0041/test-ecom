@@ -24,8 +24,6 @@ import Rooms from "../../public/img/images/mobile-app/rooms.png"
 import SubCtg from "../../public/img/images/mobile-app/sub-ctg-desc.png";
 import Hashtags from "../../public/img/images/mobile-app/hashtags.png"
 import ShortVideo from "../../public/img/images/mobile-app/short-videos.png"
-import LergVideo from "https://lit.it/assets/media/home/new/room_2_on_black_2.webm";
-import LergVideoMp4 from "https://lit.it/assets/media/home/new/room_2_on_black_2.mp4";
 import Linkedin from "../../public/img/icons/footer/linkedin.svg";
 import FooterLogo from "../../public/img/icons/logo.svg";
 import SubCat2 from "../../public/img/images/mobile-app/sub-ctg.png"
